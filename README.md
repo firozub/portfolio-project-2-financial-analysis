@@ -1,62 +1,59 @@
-Apple Inc. Financial Analysis (2009–2024)
+Apple Inc. Financial Analysis (2009-2024)
 
 Status: Work in Progress
 
-ACCA-aligned financial ratio analysis and interactive dashboard, using Apple's annual financial data from 2009–2024. Built to demonstrate practical accounting/finance analytical skills using Excel and Power BI.
+This is a financial analysis project I'm building using Apple's annual financial data from 2009 to 2024. I'm using it to practice and demonstrate the kind of accounting and financial analysis skills I'm developing through my ACCA studies, combined with Excel and Power BI.
 
 Objective
 
-Analyze 16 years of Apple's financial performance to identify profitability trends, financial health, and year-over-year growth patterns — combining traditional accounting analysis (Excel) with interactive visualization (Power BI).
+I want to look at 16 years of Apple's financial performance and figure out how profitable they've been over time, how financially healthy they are, and how their numbers have grown or declined year over year. I'm doing the number crunching and ratio work in Excel, then building a dashboard in Power BI to visualize everything.
 
 Data Source
 
+The base data (Revenue, Net Income, EBITDA, Total Assets, Total Liabilities, EPS, and a few other metrics) is from Apple Financials 2009-2024 on Kaggle, covering 2009 to 2024.
 
-Base dataset: Apple financial statement data (Revenue, Net Income, EBITDA, Total Assets, Total Liabilities, EPS, and related metrics), 2009–2024, via Kaggle.
-Supplementing with Current Assets/Current Liabilities figures sourced directly from Apple's SEC 10-K filings, to enable liquidity ratio analysis not present in the base dataset.
-
+One thing I noticed early on is that the dataset doesn't include Current Assets or Current Liabilities, which means I can't calculate liquidity ratios from it alone. So I'm going through Apple's actual SEC 10-K filings to pull those numbers myself and add them in.
 
 Planned Work
 
 Data Cleaning (Excel / Power Query)
 
 
- Strip currency symbols and thousands separators from numeric fields (all values currently stored as text)
- Convert percentage fields (e.g. Gross Margin) to true numeric values
- Standardize Year field as a date/numeric type
- Source and append Current Assets / Current Liabilities from Apple 10-K filings (2009–2024)
- Validate data against at least one year of official Apple financial statements for accuracy
+Clean up the numeric fields since everything is currently stored as text with dollar signs and commas in it
+Convert the percentage fields, like Gross Margin, into actual numbers I can calculate with
+Fix the Year column so it's a proper date or numeric field
+Add in the Current Assets and Current Liabilities figures I'm sourcing from the 10-K filings
+Double check my numbers against at least one year of Apple's official financial statements to make sure everything lines up
 
 
 Excel Analysis
 
 
- Identify the most profitable year (by Net Income and by Net Margin) and explain the drivers
- Calculate profitability ratios: Gross Margin, Net Margin, Return on Assets (ROA), Return on Equity (ROE)
- Calculate solvency ratios: Debt-to-Equity, Debt-to-Assets
- Calculate liquidity ratios: Current Ratio, Quick Ratio (pending 10-K data supplement)
- Year-over-year growth rate analysis (Revenue, Net Income, EPS)
+Figure out which year was Apple's most profitable, both by Net Income and by Net Margin, and understand what drove it
+Calculate profitability ratios: Gross Margin, Net Margin, Return on Assets, and Return on Equity
+Calculate solvency ratios: Debt to Equity and Debt to Assets
+Calculate liquidity ratios: Current Ratio and Quick Ratio, once I've added the 10-K data
+Look at year over year growth for Revenue, Net Income, and EPS
 
 
 Power BI Dashboard
 
 
- Revenue, Net Income, and EBITDA trends (2009–2024)
- Profitability ratio visualization over time
- Growth vs. decline year highlighting (visual flag for down years, e.g. 2016, 2019)
- EPS and share price trend overlay
- Summary page: key financial health indicators at a glance
+Show Revenue, Net Income, and EBITDA trends from 2009 to 2024
+Visualize how the profitability ratios have moved over time
+Highlight the years where the company grew versus the years it dipped, like 2016 and 2019
+Overlay EPS against share price
+Build a summary page that shows the key financial health indicators at a glance
 
 
 Documentation
 
 
- Case study write-up (1–2 pages): methodology, key findings, business interpretation
- Data cleaning report: what was cleaned and why
- Final README update with dashboard screenshots and findings summary
+Write a short case study, one to two pages, covering my methodology, what I found, and what it means from a business perspective
+Write up a short data cleaning report explaining what I cleaned and why
+Update this README once everything's done, with dashboard screenshots and a summary of the findings
 
 
 Tools
 
-
-Excel (ratio calculations, data cleaning)
-Power BI (dashboard, visualization)
+Excel for the ratio calculations and data cleaning. Power BI for the dashboard and visualizations.
